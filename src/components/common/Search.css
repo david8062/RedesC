@@ -1,0 +1,16 @@
+.icon__search{
+    background-image: url("../../assets/icons/search-icon.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    left: 10px;
+    width: 30px;
+    height: 35px;
+    background-size: 20px;
+    position: absolute;
+    z-index: 1;
+}
+.search__navMenu{
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}

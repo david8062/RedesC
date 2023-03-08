@@ -1,0 +1,284 @@
+
+.search__tematic {
+    width: 100%;
+    display: inline flex;
+    width: 100%;
+    background-color: white;
+    padding-top: 5%;
+    
+}
+
+.left__menu {
+    margin-left: 30px;
+}
+
+.explorer__departaments__area {
+    font-size: 26px;
+    color: var(--Faculty-Secondary);
+}
+
+.subtittle__search__tematic{
+    margin-bottom: 80px;
+    color: black;
+}
+
+li {   
+    list-style: none;
+    font-size: 16px;
+    padding-bottom: 60px;
+    margin-left: 50px;
+    font-weight: 900;
+}
+
+.departament__antropology {
+    color: var(--AntropologyA);
+}
+
+.cepol {
+    color: var(--PoliticB);
+}
+
+.departament__philosophy {
+    color: var(--PhilosophyB);
+}
+
+.departament__history {
+    color: var(--HistoryB)
+}
+
+.departament__languajes {
+    color: var(--Languages-And-CultureC);
+}
+
+.departament__sociology {
+    color: var(--SociologyC);
+}
+
+.departament__psychology {
+    color: var(--PsychologyB);
+}
+
+
+.boton {
+    width: 40px;
+    height: 26px;  
+    float: right;
+    border-radius: 20px;
+    border: 1px;
+} 
+.lbl-siwtch{
+    display: inline-block;
+    width: 80px;
+    height: 40px;      
+    border-radius: 20px;
+    border-style: solid;
+    position: relative;
+    cursor: pointer;    
+    border-color: var(--AntropologyA);    
+}
+.lbl-siwtch::after{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color:var(--AntropologyB);
+    top: 5px;
+    left: 5px;
+    transition: 0.8s;    
+    border-radius: 50%;
+}
+#btn-switch{
+    display: none;
+}
+#btn-switch:checked~ .lbl-siwtch::after{
+     left: 40px;
+}
+#btn-switch:checked~ .lbl-siwtch{
+    background-color: var(--AntropologyA);
+}
+/* Cepol */
+.lbl-siwtch-cepol{
+    display: inline-block;
+    width: 80px;
+    height: 40px;      
+    border-radius: 20px;
+    border-style: solid;
+    position: relative;
+    cursor: pointer;    
+    border-color: var(--PoliticB);    
+}
+.lbl-siwtch-cepol::after{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color:var(--PoliticA);
+    top: 5px;
+    left: 5px;
+    transition: 0.8s;    
+    border-radius: 50%;
+}
+#btn-switch-cepol{
+    display: none;
+}
+#btn-switch-cepol:checked~ .lbl-siwtch-cepol::after{
+     left: 40px;
+}
+#btn-switch-cepol:checked~ .lbl-siwtch-cepol{
+    background-color: var(--PoliticB);
+}
+/* fiolosofia */
+.lbl-siwtch-philosophy{
+    display: inline-block;
+    width: 80px;
+    height: 40px;      
+    border-radius: 20px;
+    border-style: solid;
+    position: relative;
+    cursor: pointer;    
+    border-color: var(--PhilosophyB);    
+}
+.lbl-siwtch-philosophy::after{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color:var(--PhilosophyA);
+    top: 5px;
+    left: 5px;
+    transition: 0.8s;    
+    border-radius: 50%;
+}
+#btn-switch-philosophy{
+    display: none;
+}
+#btn-switch-philosophy:checked~ .lbl-siwtch-philosophy::after{
+     left: 40px;
+}
+#btn-switch-philosophy:checked~ .lbl-siwtch-philosophy{
+    background-color: var(--PhilosophyB);
+}
+/* Historia y Geografia */
+.lbl-siwtch-history{
+    display: inline-block;
+    width: 80px;
+    height: 40px;      
+    border-radius: 20px;
+    border-style: solid;
+    position: relative;
+    cursor: pointer;    
+    border-color: var(--HistoryB);    
+}
+.lbl-siwtch-history::after{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color:var(--HistoryA);
+    top: 5px;
+    left: 5px;
+    transition: 0.8s;    
+    border-radius: 50%;
+}
+#btn-switch-history{
+    display: none;
+}
+#btn-switch-history:checked~ .lbl-siwtch-history::after{
+     left: 40px;
+}
+#btn-switch-history:checked~ .lbl-siwtch-history{
+    background-color: var(--HistoryB);
+}
+/* Lengua y Cultura */
+.lbl-siwtch-languajes{
+    display: inline-block;
+    width: 80px;
+    height: 40px;      
+    border-radius: 20px;
+    border-style: solid;
+    position: relative;
+    cursor: pointer;    
+    border-color: var(--Languages-And-CultureB);    
+}
+.lbl-siwtch-languajes::after{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color:var(--LanguagesAndCultureA);
+    top: 5px;
+    left: 5px;
+    transition: 0.8s;    
+    border-radius: 50%;
+}
+#btn-switch-languajes{
+    display: none;
+}
+#btn-switch-languajes:checked~ .lbl-siwtch-languajes::after{
+     left: 40px;
+}
+#btn-switch-languajes:checked~ .lbl-siwtch-languajes{
+    background-color: var(--Languages-And-CultureB);
+}
+/* Sociologia */
+.lbl-siwtch-sociology{
+    display: inline-block;
+    width: 80px;
+    height: 40px;      
+    border-radius: 20px;
+    border-style: solid;
+    position: relative;
+    cursor: pointer;    
+    border-color: var(--SociologyB);    
+}
+.lbl-siwtch-sociology::after{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color:var(--SociologyA);
+    top: 5px;
+    left: 5px;
+    transition: 0.8s;    
+    border-radius: 50%;
+}
+#btn-switch-sociology{
+    display: none;
+}
+#btn-switch-sociology:checked~ .lbl-siwtch-sociology::after{
+     left: 40px;
+}
+#btn-switch-sociology:checked~ .lbl-siwtch-sociology{
+    background-color: var(--SociologyB);
+}
+/* Psicologia */
+.lbl-siwtch-psychology{
+    display: inline-block;
+    width: 80px;
+    height: 40px;      
+    border-radius: 20px;
+    border-style: solid;
+    position: relative;
+    cursor: pointer;    
+    border-color: var(--PsychologyB);    
+}
+.lbl-siwtch-psychology::after{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color:var(--PsychologyA);
+    top: 5px;
+    left: 5px;
+    transition: 0.8s;    
+    border-radius: 50%;
+}
+#btn-switch-psychology{
+    display: none;
+}
+#btn-switch-psychology:checked~ .lbl-siwtch-psychology::after{
+     left: 40px;
+}
+#btn-switch-psychology:checked~ .lbl-siwtch-psychology{
+    background-color: var(--PsychologyB);
+}

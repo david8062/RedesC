@@ -1,0 +1,19 @@
+.main__selection-SearchTematic{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px;
+    
+}
+.tittle__tematic{
+    color: var(--General-Link);
+    width: 100%;
+}
+.menu__tematic{
+    overflow: auto;
+    border-top: 1px solid;
+    border-color: var(--Faculty-Secondary);
+    height: 800px;
+    
+}

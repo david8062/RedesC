@@ -1,0 +1,42 @@
+.card__proffesor {
+    display: inline-block;
+    margin: 10px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: var(--Faculty-Secondary);
+    position: relative;
+}
+
+.name__proffesor {
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-size: 15px;   
+    z-index: 1;
+    
+  
+}
+
+img {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    border: solid 1px;
+    border-color: red;
+    margin-bottom: 2px;
+
+}
+
+figcaption {
+    display: none;
+    transition: all .5s;
+}
+
+.card__proffesor:hover>figcaption {
+    position: absolute;
+    display: block;
+    transition: all .5s;
+    z-index:2 ;
+
+}

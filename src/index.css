@@ -1,13 +1,128 @@
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* colores pagina */
+:root {
+    --Faculty-Primary: #1C152B;
+    --Faculty-Secondary: #34388E;
+    --SociologyA: #FF6D49;
+    --SociologyB: #CB3F1F;
+    --SociologyC: #690C0E;
+    --PsychologyA: #AD60BF;
+    --PsychologyB: #d62ca0;
+    --PsychologyC: #371432;
+    --LanguagesAndCultureA: #00B2BF;
+    --Languages-And-CultureB: #006F82;
+    --Languages-And-CultureC: #00293E;
+    --HistoryA: #FF6B81;
+    --HistoryB: #971005;
+    --HistoryC: #62021E;
+    --AntropologyA: #004D40;
+    --AnthropologyB: #9ECEA2;
+    --AntropologyC: #007461;
+    --PhilosophyA: #00B9D3;
+    --PhilosophyB: #0070A7;
+    --PhilosophyC: #002765;
+    --PoliticA: #E1B6A1;
+    --PoliticB: #6D5928;
+    --PoliticC: #352007;
+    --General-Link: #6592CD;
+    --Body-Text: #4A4A49;
+    --Litte-Text: #878787;
+}
+
+/*Fuentes*/
+@font-face {
+    font-family: 'SourceSansPro-Black';
+    src: url('./assets/fonts/SourceSansPro-Black.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'SourceSansPro-BlackItalic';
+    src: url('./assets/fonts/SourceSansPro-BlackItalic.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Bold';
+    src: url('./assets/fonts/SourceSansPro-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'SourceSansPro-ExtraLight';
+    src: url('./assets/fonts/SourceSansPro-ExtraLight.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('./assets/fonts/SourceSansPro-Regular.ttf') format('ttf');
+}
+
+/*Estilos generales*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+p,
+body {
+    font-family: 'SourceSansPro-regular';
+    color: white;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 21px;
+}
+
+h5,
+p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+input {
+    height: 35px;
+    width: 400px;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: gray;
+    color: var(--Faculty-Secondary);
+    font-weight: 900;
+    padding-left: 50px;
+}
+
+ul,
+li {
+    color: var(--Body-Text);
+    font-size: 37px;
+    font-weight: 500;
+    height: 98px;
+    width: 625px;
+    left: 8px;
+    top: 8px;
+    border-radius: 0px;
+
 }

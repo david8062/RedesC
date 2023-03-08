@@ -1,0 +1,11 @@
+.languajes__departament{
+    width: 310px;
+    height: 305px;
+    background-color: var(--Languages-And-CultureB);
+    opacity: 60%;
+    border-radius: 50%;
+    position: absolute;
+    margin-right: 23%;
+    margin-top: 40%;
+    margin-left: 0.8%;
+}

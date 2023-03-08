@@ -1,0 +1,37 @@
+
+
+.main__section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    column-gap: 2%;
+    border: 1px solid;
+    border-color: red;
+    margin: 0 auto;
+    padding-top: 5%;
+    background-color: var(--Faculty-Secondary);
+}
+
+.frame__left {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 50%;
+    float: left;
+}
+
+.frame__left h1 {
+    margin-bottom: 40%;
+}
+
+.frame__right {
+    width: 50%;
+    float: right;
+    border: 1px solid;
+    border-color: pink;
+}
+
+.sub__tittle {
+    color: var(--General-Link);
+    margin-bottom: 20%;
+}

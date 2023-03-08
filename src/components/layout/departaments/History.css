@@ -1,0 +1,11 @@
+.history__department{
+    width: 283px;
+    height: 283px;
+    background-color: var(--HistoryB);
+    opacity: 40%;
+    border-radius: 50%;
+    margin-right: 50%;
+    margin-top: 67%;
+    margin-left: 17%;
+    position: absolute;
+}
