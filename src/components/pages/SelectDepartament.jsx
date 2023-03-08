@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 import './SelectDepartament.css'
 /*importacion de componentes*/
 import Aside from '../../components/layout/Aside'
@@ -9,7 +9,9 @@ import Philosophy from '../layout/departaments/Philosophy'
 import Psychology from "../layout/departaments/Psychology"
 import Sociology from "../layout/departaments/Sociology"
 import Anthropology from '../layout/departaments/Anthropology'
+import {showDepartament} from '../../utils/functions/showDepartament'
 const SelectDepartament = () => {
+  const [anthropologyVisible, setAnthropologyVisible] = useState(false);
     return (
       <section className="search__tematic">
       <div className="left__menu">
@@ -19,7 +21,7 @@ const SelectDepartament = () => {
           {/* Antropologia */}
           <li className='departament__antropology'>Antropología
             <div className="boton">
-              <input type="checkbox" name="" id="btn-switch"/>
+              <input type="checkbox" name="" id="btn-switch"  onChange ={() => showDepartament(anthropologyVisible, setAnthropologyVisible)}/>
               <label htmlFor="btn-switch" className='lbl-siwtch' ></label>
             </div>
           </li>
@@ -68,7 +70,7 @@ const SelectDepartament = () => {
             <Philosophy />
             <Psychology />
             <Sociology />
-            <Anthropology/>
+            {anthropologyVisible && <Anthropology />}
       </Aside>
      
     </section>
