@@ -1,14 +1,12 @@
 import React from 'react'
 import './ListTematic.css'
 import Search from '../common/Search'
-import Interest from '../../utils/hooks/Interest'
 const ListTematic = () => {
   return (
     <div className="main__selection-SearchTematic">
     <div className="search__tematic">
         <h3 className="tittle__tematic">Temáticas de investigación</h3>        
     </div>
-    <Interest />
     <Search />
     <div className="menu__tematic">
          

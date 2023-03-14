@@ -3,7 +3,7 @@ import './InvestigationLines.css'
 import Menu from '../layout/Menu'
 import Aside from '../layout/Aside'
 import CardProfessor from '../common/CardProfessor'
-import ListProfessor from '../../utils/hooks/ListProfessor'
+import ListProfessor from '../../utils/functions/ListProfessor'
 const InvestigationLines = () => {
   return (
     <><Menu />

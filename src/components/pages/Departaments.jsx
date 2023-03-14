@@ -9,7 +9,6 @@ import Psychology from "../layout/departaments/Psychology"
 import Sociology from "../layout/departaments/Sociology"
 import Anthropology from '../layout/departaments/Anthropology'
 import BtnContinue from "../common/BtnContinue"
-import ListTematic from '../layout/ListTematic'
 const Departaments = () => {
   return (
     <><Menu />
