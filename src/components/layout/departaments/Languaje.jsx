@@ -1,8 +1,11 @@
 import React from 'react'
 import './Languaje.css'
-const Languaje = () => {
+import ListProfessorDepartament from '../../../utils/functions/listProfessorDepartament'
+const Languaje = (props) => {
   return (
-   <div className="languajes__departament"></div>
+   <div className="languajes__departament">
+    <ListProfessorDepartament />
+   </div>
   )
 }
 

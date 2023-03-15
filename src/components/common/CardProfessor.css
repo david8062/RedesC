@@ -38,5 +38,6 @@ figcaption {
     display: block;
     transition: all .5s;
     z-index:2 ;
+    transform: scale(1.5);
 
 }
