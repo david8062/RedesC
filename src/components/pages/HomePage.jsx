@@ -13,7 +13,7 @@ const HomePage = () => {
             </div>
             <div className="frame__right">
                 <h3>Explora la facultad a travéz de las redes que se tejen entre:</h3>
-                <Link to="/InvestigationLines">
+                <Link to="/investigationLines">
                     <div className="card__lines">
                         <h3>Líneas de investigacion</h3>
                         <p>Explora cómo se conectan profesores y profesoras de <br></br>
@@ -21,7 +21,7 @@ const HomePage = () => {
                         <div className="icon__line">icono</div>
                     </div>
                 </Link>
-                <Link to="Departaments">
+                <Link to="departaments">
                     <div className="card__tematic">
                         <h3>Temáticas de investigación</h3>
                         <p>Explora las temáticas de trabajo que unen a los <br></br>

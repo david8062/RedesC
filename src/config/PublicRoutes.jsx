@@ -9,10 +9,10 @@ const PublicRoutes = () => {
     return (
         <Routes>
             <Route path='/' element={<HomePage />}></Route> 
-            <Route path='/InvestigationLines' element={<InvestigationLines />}></Route>
-            <Route path='/Departaments' element={<Departaments />}></Route> 
-            <Route path = '/SelectDepartament' element = { <SelectDepartament />}></Route>    
-            <Route path = '/ListTematic' element = {<ListTematic />}></Route>  
+            <Route path='/investigationLines' element={<InvestigationLines />}></Route>
+            <Route path='/departaments' element={<Departaments />}></Route> 
+            <Route path = '/selectdepartament' element = { <SelectDepartament />}></Route>    
+            <Route path = '/listtematic' element = {<ListTematic />}></Route>  
         </Routes>
     )
 }

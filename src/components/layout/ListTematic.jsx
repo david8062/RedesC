@@ -1,16 +1,18 @@
 import React from 'react'
 import './ListTematic.css'
 import Search from '../common/Search'
+import ViewTematic from '../../utils/functions/ViewTematic'
+import CardTematic from '../common/CardTematic'
 const ListTematic = () => {
   return (
     <div className="main__selection-SearchTematic">
-    <div className="search__tematic">
-        <h3 className="tittle__tematic">Temáticas de investigación</h3>        
-    </div>
-    <Search />
-    <div className="menu__tematic">
-         
-    <ul>
+      <div className="search__tematic">
+        <h3 className="tittle__tematic">Temáticas de investigación</h3>
+      </div>
+      <Search />
+
+
+      <ul>
             <li>A</li>
             <li>B</li>
             <li>C</li>
@@ -38,9 +40,12 @@ const ListTematic = () => {
             <li>Y</li>
             <li>Z</li>
         </ul>
+
+      <ViewTematic>
+        <CardTematic />
+      </ViewTematic>
     </div>
-       
-    </div>
+
   )
 }
 

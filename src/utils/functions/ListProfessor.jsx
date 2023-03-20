@@ -2,7 +2,7 @@ import React from 'react';
 import CardProfessor from '../../components/common/CardProfessor';
 import DatosJSON from '../hooks/peticionJSON';
 
-const ListProfessor = (props) => {
+const ListProfessor = () => {
     const dataProfessor = DatosJSON();
 
     return (

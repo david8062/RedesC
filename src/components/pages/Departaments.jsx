@@ -9,6 +9,7 @@ import Psychology from "../layout/departaments/Psychology"
 import Sociology from "../layout/departaments/Sociology"
 import Anthropology from '../layout/departaments/Anthropology'
 import BtnContinue from "../common/BtnContinue"
+import { Link } from 'react-router-dom'
 const Departaments = () => {
   return (
     <><Menu />
@@ -21,7 +22,9 @@ const Departaments = () => {
           <h1 className="professors">7</h1>
           <p className='description__professor'>La facultad de ciencias sociales cuenta con 120 profesores de los cuales el x% <br></br>Son doctores en sus áreas respectivas,<br></br>
             el otro x% esta en proceso de obtenerlo</p>
+          <Link to = '/selectdepartament' >
           <BtnContinue />
+          </Link>
         </div>
         <div className="list__professor">
           <Aside>
