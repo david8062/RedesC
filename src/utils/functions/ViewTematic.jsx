@@ -3,38 +3,26 @@ import DatosJSON from '../hooks/peticionJSON';
 import CardTematic from '../../components/common/CardTematic'
 const ViewTematic = () => {
   const dataProfessor = DatosJSON()
+  let arrayTematic = []; 
   try {
-    return (
-      <div className="menu__tematic">
-        {dataProfessor.map((result) => {
-          return result.map((data) => {
-            const arrayDepartament = data.otros_campos?.intereses_teoricos || [];
-            const uniqueDepartaments = arrayDepartament.filter(
-              (value, index, self) => self.indexOf(value) === index && self.lastIndexOf(value) === index
-            );
-            return (
-              <>
-                {uniqueDepartaments.map((departament) => {
-                  if (!departament) {                    
-                    return null;
-                  }
-                  return (
-                    <CardTematic
-                      tematic={departament}
-                    />
-                  );
-                })}
-              </>
-            );
-          });
-        })}
-      </div>
-
-    )
+    dataProfessor.map((result) => {
+      return result.map((data => {
+        const arrayInterest = data.otros_campos?.intereses_teoricos || [];
+        arrayTematic.push(...arrayInterest)
+      }))
+    });
+    const listTematic = arrayTematic.filter(
+      (value, index, self) => self.indexOf(value) === index
+    );
+    listTematic.sort((a, b) => a.localeCompare(b));
+    console.log(listTematic)    
   } catch (error) {
-    console.error("ocurrio un error", error)
+    alert.error("Error al cargar los datos de los profesores")
   }
+  
+}
+  export default ViewTematic
+
+function tematic(){
 
 }
-
-export default ViewTematic
