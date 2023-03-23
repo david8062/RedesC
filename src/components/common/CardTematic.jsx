@@ -1,6 +1,7 @@
 
 import React from 'react'
 import "./CardTematic.css"
+
 const CardTematic = (props) => {
   return (
     <div className="card__tematic">
