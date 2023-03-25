@@ -9,11 +9,11 @@ import Philosophy from '../layout/departaments/Philosophy'
 import Psychology from "../layout/departaments/Psychology"
 import Sociology from "../layout/departaments/Sociology"
 import Anthropology from '../layout/departaments/Anthropology'
-import {showDepartament} from '../../utils/functions/showDepartament'
+import { showDepartament } from '../../utils/functions/showDepartament'
 const SelectDepartament = () => {
   const [anthropologyVisible, setAnthropologyVisible] = useState(false);
-    return (
-      <section className="search__tematic">
+  return (
+    <section className="search__tematic">
       <div className="left__menu">
         <h3 className='explorer__departaments__area'>Explora los departamentos y áreas</h3>
         <h4 className='subtittle__search__tematic'>Quisiera explorar las líneas de investigación de: </h4>
@@ -21,26 +21,26 @@ const SelectDepartament = () => {
           {/* Antropologia */}
           <li className='departament__antropology'>Antropología
             <div className="boton">
-              <input type="checkbox" name="" id="btn-switch"  onChange ={() => showDepartament(anthropologyVisible, setAnthropologyVisible)}/>
+              <input type="checkbox" name="" id="btn-switch" onChange={() => showDepartament(anthropologyVisible, setAnthropologyVisible)} />
               <label htmlFor="btn-switch" className='lbl-siwtch' ></label>
             </div>
           </li>
           {/* Cepol */}
           <li className='cepol'>Ciencia Politica
             <div className="boton">
-              <input type="checkbox" name="" id="btn-switch-cepol"/>
+              <input type="checkbox" name="" id="btn-switch-cepol" />
               <label htmlFor="btn-switch-cepol" className='lbl-siwtch-cepol'></label>
             </div></li>
           {/* Filosofia */}
           <li className='departament__philosophy'>Filosofia
             <div className="boton">
-              <input type="checkbox" name="" id="btn-switch-philosophy"/>
+              <input type="checkbox" name="" id="btn-switch-philosophy" />
               <label htmlFor="btn-switch-philosophy" className='lbl-siwtch-philosophy'></label>
             </div></li>
           {/* Historia */}
           <li className='departament__history'>Historia y Geografia
             <div className="boton">
-              <input type="checkbox" name="" id="btn-switch-history"/>
+              <input type="checkbox" name="" id="btn-switch-history" />
               <label htmlFor="btn-switch-history" className='lbl-siwtch-history'></label>
             </div></li>
           {/* Lenguas */}
@@ -52,27 +52,30 @@ const SelectDepartament = () => {
           {/* Sociologia */}
           <li className='departament__sociology'>Sociología
             <div className="boton">
-              <input type="checkbox" name="" id="btn-switch-sociology"/>
+              <input type="checkbox" name="" id="btn-switch-sociology" />
               <label htmlFor="btn-switch-sociology" className='lbl-siwtch-sociology'></label>
             </div></li>
           {/* Psicologia */}
           <li className='departament__psychology'>Psicología
             <div className="boton">
-              <input type="checkbox" name="" id="btn-switch-psychology"/>
+              <input type="checkbox" name="" id="btn-switch-psychology" />
               <label htmlFor="btn-switch-psychology" className='lbl-siwtch-psychology'></label>
             </div></li>
-        </ul>        
-      </div>
-      <Aside>
-      <Cepol />
+        </ul>
+        <div className="list-professor">
+          <Aside>
+            <Cepol />
             <History />
             <Languaje />
             <Philosophy />
             <Psychology />
             <Sociology />
-            {anthropologyVisible && <Anthropology />}
-      </Aside>
-     
+            <Anthropology/>
+          </Aside>
+        </div>
+      </div>
+      
+
     </section>
   )
 }

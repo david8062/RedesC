@@ -1,37 +1,86 @@
-
-
-.main__section {
+.main-section{
     width: 100vw;
     height: 100vh;
-    position: relative;
-    display: flex;
-    column-gap: 2%;
-    border: 1px solid;
-    border-color: red;
-    margin: 0 auto;
-    padding-top: 5%;
+    max-width: 1600px;
+    min-width: 300px;
+    padding: 2.5%;
     background-color: var(--Faculty-Secondary);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    align-items: center;
+    justify-items: center;
 }
 
-.frame__left {
-    padding-left: 5%;
-    padding-right: 5%;
+.frame-left{
     width: 50%;
-    float: left;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
 }
-
-.frame__left h1 {
-    margin-bottom: 40%;
-}
-
-.frame__right {
-    width: 50%;
-    float: right;
-    border: 1px solid;
-    border-color: pink;
-}
-
-.sub__tittle {
+.sub-tittle{
     color: var(--General-Link);
-    margin-bottom: 20%;
 }
+
+.frame-left > :nth-child(2){
+    margin-bottom: 100px;
+}
+
+
+.frame-right{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;    
+}
+
+.card-lines, .card-tematic{
+    width: 100%;
+    height: 200px;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--General-Link);
+}
+.card-tematic > :nth-child(2), .card-lines > :nth-child(2) {
+   width: 78%;
+  }
+.icon-line, .icon-tematic{
+    width: 150px;
+    height: 300px;
+    align-self: flex-end;
+    box-sizing: border-box;        
+    background-image: url("../../assets/icons/Exclude.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.card-lines:hover, .card-tematic:hover{
+    scale: 1.1;
+    transition: 1.2s;
+}
+.card-lines::before, .card-tematic::before{
+    scale: 1;
+    transition: 1.2s;
+    
+}
+.card-lines:hover > :nth-child(3), .card-tematic:hover > :nth-child(3){
+    transform: translateX(20px);
+    transition: 1.2s;
+}
+
+.logo{
+    width: 300px;
+    height: 100px;
+    margin-left: 500px;
+    align-self: center;
+    background-image: url("../../assets/icons/LogoUniversity.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+

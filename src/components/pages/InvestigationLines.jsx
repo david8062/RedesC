@@ -9,25 +9,24 @@ import { Link } from 'react-router-dom'
 const InvestigationLines = () => {
   return (
     <><Menu />
-      <section className = 'Main-section__InvestigationLines'>
-        <div className = "description__faculty">
-          <h4 className = "subtittle">Composición de la</h4>
-          <h1 className = "tittle">Facultad de <br></br>Ciencias Sociales</h1>
-          <h3 className = "departament__area">Profesores</h3>
+      <section className = 'main-section-InvestigationLines'>
+        <div className = "description-faculty">
+          <h4 className = "subtittle-investigation-lines">Composición de la</h4>
+          <h1 className = "tittle-investigation-lines">Facultad de <br></br><strong>Ciencias Sociales</strong></h1>
+          <h3 className = "departament-area">Profesores</h3>
           <h1 className = "professors">120</h1>
-          <p className ='description__professor'>La facultad de ciencias sociales cuenta con 120 profesores de los cuales el x% <br></br>Son doctores en sus áreas respectivas,<br></br>
+          <p className = "description-professor">La facultad de ciencias sociales cuenta con 120 profesores de los cuales el x% <br></br>Son doctores en sus áreas respectivas,<br></br>
             el otro x% esta en proceso de obtenerlo</p>
           <Link to = '/departaments'>
           <BtnContinue />
           </Link>
         </div>
 
-        <div className="list__professor">
+        <div className="list-professor">
           <Aside>
             <ListProfessor>
               <CardProfessor />
-              </ListProfessor>
-                
+              </ListProfessor>                
           </Aside>
         </div>
       </section></>

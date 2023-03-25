@@ -1,10 +1,10 @@
-.departaments{
-    margin-left: 300px;
-    height: 1000px;;
-    width: 1000px;
+.departaments {
+    margin-top: 10px;
+    width: 850px;
+    height: 850px;   
+    border-radius: 100%;
     background-color: #6592cd36;
-    border-radius: 50%;
-    position: relative; 
+    position: relative;
     display: grid;
-    grid-template-columns: auto auto auto;   
+    grid-template-columns: auto auto auto auto;
 }

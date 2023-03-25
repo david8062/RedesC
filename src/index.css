@@ -1,9 +1,15 @@
-html,
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html,
+body {
     background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 1792px;
+    min-width: 300px;
 }
 
 
@@ -75,6 +81,7 @@ p,
 body {
     font-family: 'SourceSansPro-regular';
     color: white;
+    font-weight: 400;
 }
 
 h1 {
@@ -125,4 +132,8 @@ li {
     top: 8px;
     border-radius: 0px;
 
+}
+
+strong {
+    font-weight: bolder;
 }

@@ -35,7 +35,6 @@ export default ViewTematic;
 
 
 
-
 // const ViewTematic = () => {
 //   const dataProfessor = DatosJSON();
 //   let arrayTematic = [];

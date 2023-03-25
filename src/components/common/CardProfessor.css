@@ -1,21 +1,20 @@
-.card__proffesor {
+.card-proffesor {
     display: inline-block;
-    margin: 10px;
-    height: 35px;
-    width: 35px;
+    margin: 9px;
+    height: 30px;
+    width: 30px;    
     border-radius: 50%;
     background-color: var(--Faculty-Secondary);
-    position: relative;
+    position: relative;    
 }
 
-.name__proffesor {
+.name-proffesor {
+    max-width: 300px;
     color: black;
     background-color: white;
     text-align: center;
-    font-size: 15px;   
-    z-index: 1;
-    
-  
+    font-size: 10px;
+    z-index: 2;   
 }
 
 img {
@@ -33,11 +32,10 @@ figcaption {
     transition: all .5s;
 }
 
-.card__proffesor:hover>figcaption {
+.card-proffesor:hover>figcaption {
     position: absolute;
     display: block;
     transition: all .5s;
-    z-index:2 ;
-    transform: scale(1.5);
-
+    z-index:1 ;
+    transform: scale(1.8);
 }

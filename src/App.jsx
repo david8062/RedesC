@@ -5,10 +5,10 @@ import ListTematic from './components/layout/ListTematic'
 const App = () => {
 
   return (
-    <ListTematic></ListTematic>
-    // <BrowserRouter>
-    //   <PublicRoutes />
-    // </BrowserRouter>
+    // <ListTematic></ListTematic>
+    <BrowserRouter>
+      <PublicRoutes />
+    </BrowserRouter>
 
   )
 }

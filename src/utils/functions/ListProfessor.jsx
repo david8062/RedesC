@@ -4,9 +4,8 @@ import DatosJSON from '../hooks/peticionJSON';
 
 const ListProfessor = () => {
     const dataProfessor = DatosJSON();
-
     return (
-        <div className="JASON__professor">
+        <div className="JSON-professor">
             {dataProfessor.map((result) => {
                 return result.map((data) => {                             
                             return (

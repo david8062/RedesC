@@ -1,10 +1,10 @@
 .sicology__departament{
-    width: 391px;
-    height: 391px;
+    width: 360px;
+    height: 360px;
     background-color: var(--PsychologyB);
     opacity: 60%;
     border-radius: 50%;
     margin-left:  46%;
-    margin-top: 5%;
+    margin-top: 6%;
     position: absolute;
 }

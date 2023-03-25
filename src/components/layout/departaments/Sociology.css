@@ -1,10 +1,10 @@
 .sociology__departament{
-    width: 168px;
-    height: 168px;
+    width: 180px;
+    height: 180px;
     background-color: var(--SociologyB);
     opacity: 60%;
     border-radius: 50%;
-    margin-top: 52%;
-    margin-left:80%;
+    margin-top: 42%;
+    margin-left:78%;
     position: absolute;
 }
