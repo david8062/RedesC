@@ -22,7 +22,7 @@ const InvestigationLines = () => {
           </Link>
         </div>
 
-        <div className="list-professor">
+        <div className="list-professor-investigation">
           <Aside>
             <ListProfessor>
               <CardProfessor />

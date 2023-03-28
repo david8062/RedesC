@@ -1,31 +1,35 @@
-import React from 'react'
+import React from 'react';
 import CardProfessor from '../../components/common/CardProfessor';
 import DatosJSON from '../hooks/peticionJSON';
-import Languaje from '../../components/layout/departaments/Languaje'
-const ListProfessor = () => {
-    const dataProfessor = DatosJSON()
-    return (
-        <>
-            {
-                dataProfessor.map((result) => {
-                    return result.map((data) => {
-                        const arrayDepartament = data["area-departamento"]
-                        const departament = arrayDepartament[0]
-                        switch (departament) {
-                            case 13:
-                                
-                                break;
-                            case 9:
-                               
-                            default:
-                                break;
-                        }
 
-                    });
-                })
-            }
-        </>
-    )
-}
+const ListProfessorDepartament = () => {
+  const dataProfessor = DatosJSON();
+  console.log("hola")  
+  switch (dataProfessor["area-departamento"]) {
+    case "13":
+        console.log("lengua y cultura")
+      break;
+    case "9":
+      console.log("Antropologia")
+      break;
+    case "10":
+        console.log("Cepol")
+      break;
+    case "11":
+        console.log("Filosofia")
+        break;
+    case "12":
+        console.log("Historia y Greografia")
+    break;
+    case "14":
+      console.log("Sicologia")
+    break
+    case "18":
+      console.log("sociologia")
+    break
+    default:
+      break;
+  }
+};
 
-export default ListProfessor;
+export default ListProfessorDepartament;

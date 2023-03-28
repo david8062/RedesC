@@ -1,25 +1,24 @@
 
-.search__tematic {
+.main-section-select-departament {    
+    height: 100%;
     width: 100%;
-    display: inline flex;
-    width: 100%;
-    background-color: white;
-    padding-top: 5%;
+    display: flex;    
+}
+
+.left-menu-departament {        
+    width: 30%;
+    height:90vb;
+    margin: 3% 15% 0 1%;
     display: flex;
     flex-direction: column;
-    
 }
 
-.left__menu {
-    margin-left: 30px;
-}
-
-.explorer__departaments__area {
+.explorer-departaments-area {
     font-size: 26px;
     color: var(--Faculty-Secondary);
 }
 
-.subtittle__search__tematic{
+.subtittle-search-tematic{
     margin-bottom: 80px;
     color: black;
 }
@@ -32,7 +31,7 @@ li {
     font-weight: 900;
 }
 
-.departament__antropology {
+.departament-antropology {
     color: var(--AntropologyA);
 }
 
@@ -40,23 +39,23 @@ li {
     color: var(--PoliticB);
 }
 
-.departament__philosophy {
+.departament-philosophy {
     color: var(--PhilosophyB);
 }
 
-.departament__history {
+.departament-history {
     color: var(--HistoryB)
 }
 
-.departament__languajes {
+.departament-languajes {
     color: var(--Languages-And-CultureC);
 }
 
-.departament__sociology {
+.departament-sociology {
     color: var(--SociologyC);
 }
 
-.departament__psychology {
+.departament-psychology {
     color: var(--PsychologyB);
 }
 
