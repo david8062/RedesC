@@ -1,12 +1,14 @@
 
 .card__tematic {
     height: 39px;
-    width: 101px;   
+    width: 100px;   
     border-radius: 20px;
     padding: 8px 16px 8px 16px;
     border: 1px solid;
     border-color: var(--Faculty-Secondary);
-    color: var(--Faculty-Secondary);
+    color: var(--Faculty-Secondary);  
+    min-width: 100px;
+    
 }
 .interes__teoricos{
     color: var(--Faculty-Secondary);

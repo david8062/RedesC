@@ -1,23 +1,29 @@
-.main__selection-SearchTematic{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin: 20px;
-    
-}
-.tittle__tematic{
-    color: var(--General-Link);
-    width: 100%;
-}
-.menu__tematic{
+.main-selection-SearchTematic{
     overflow: auto;
     border-top: 1px solid;
     border-color: var(--Faculty-Secondary);
     height: 800px;
+    width: 600px;
+  
+}
+   
+
+.tittle__tematic{
+    color: var(--General-Link);
+    width: 100%;
+}
+
+
+.letter-menu-tematic{
+    color: gray;
+    font-size: 25px;
+    width: 100%;
+}
+
+
+
+.letter {
     display: grid;
-    grid-template-columns: auto auto auto;
-    row-gap: 10px;
-    
-    
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
 }

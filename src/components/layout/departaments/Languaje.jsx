@@ -4,7 +4,7 @@ import ListProfessorDepartament from '../../../utils/functions/listProfessorDepa
 const Languaje = (props) => {
   return (
    <div className="languajes__departament">
-    <ListProfessorDepartament />
+
    </div>
   )
 }
