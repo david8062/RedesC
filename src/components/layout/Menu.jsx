@@ -7,8 +7,8 @@ const Menu = () => {
         <div className="menu__icon"></div>
         <h5>Redes de conocimiento | Facultad de Ciencias Sociales</h5>
         <div className="search__menu">
-          <Search busqueda = {"Busqueda por profesor"} >
-           
+          <Search
+           busqueda = {"Busqueda por profesor"} >           
           </Search>
         </div>
     </div>
