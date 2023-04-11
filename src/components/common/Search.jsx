@@ -1,9 +1,9 @@
 import React from 'react'
 import './Search.css'
-const Search = ( {busqueda } ) => {
+const Search = ( {busqueda, search , searcher } ) => {
   return (
     <div className = "search__navMenu">
-      <input  type = "text" placeholder = {busqueda}  />
+      <input value = {search} onChange={searcher} type = "text" placeholder = {busqueda}  />
       <div className="icon__search"></div>      
     </div>
   )

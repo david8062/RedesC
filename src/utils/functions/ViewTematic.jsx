@@ -4,6 +4,7 @@ import CardTematic from '../../components/common/CardTematic';
 
 const ViewTematic = () => {
   const dataProfessor = DatosJSON();
+  
   let arrayTematic = [];
   try {
     dataProfessor.map((result) => {
@@ -31,7 +32,7 @@ const ViewTematic = () => {
     console.log(groupedTematic);
 
     return (
-    <div className="main-selection-SearchTematic">   
+      <div className="main-selection-SearchTematic">
         {/* Iterar sobre las claves del objeto y crear un contenedor para cada letra */}
         {Object.keys(groupedTematic).map((letter) => (
           <div className='letter' key={letter}>
