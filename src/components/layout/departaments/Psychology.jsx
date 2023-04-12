@@ -1,8 +1,10 @@
 import React from 'react'
 import './Psychology.css'
-const Psychology = () => {
+const Psychology = (props) => {
   return (
-    <div className="sicology__departament"></div>
+    <div className="sicology__departament">
+      {props.children}
+    </div>
   )
 }
 

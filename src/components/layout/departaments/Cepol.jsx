@@ -1,8 +1,9 @@
 import React from 'react'
 import './Cepol.css'
-const Cepol = () => {
+const Cepol = (props) => {
   return (
-    <div className="departament__Cepol">      
+    <div className="departament__Cepol">     
+    {props.children} 
     </div>
   )
 }

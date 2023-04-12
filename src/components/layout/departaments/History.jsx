@@ -1,8 +1,10 @@
 import React from 'react'
 import './History.css'
-const History = () => {
+const History = (props) => {
   return (
-    <div className="history__department"></div>
+    <div className="history__department">
+      {props.children}
+    </div>
   )
 }
 

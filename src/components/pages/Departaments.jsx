@@ -2,15 +2,9 @@ import React from 'react'
 import '../pages/InvestigationLines.css'
 import Menu from '../layout/Menu'
 import Aside from '../layout/Aside'
-import Cepol from '../layout/departaments/Cepol'
-import History from '../layout/departaments/History'
-import Languaje from '../layout/departaments/Languaje'
-import Philosophy from '../layout/departaments/Philosophy'
-import Psychology from "../layout/departaments/Psychology"
-import Sociology from "../layout/departaments/Sociology"
-import Anthropology from '../layout/departaments/Anthropology'
-import BtnContinue from "../common/BtnContinue"
+import ListProfessorDepartament from "../../utils/functions/ListProfessorDepartament"
 import { Link } from 'react-router-dom'
+import BtnContinue from "../common/BtnContinue"
 const Departaments = () => {
   return (
     <><Menu />
@@ -29,13 +23,7 @@ const Departaments = () => {
         </div>
         <div className="list-professor">
           <Aside>
-            <Cepol />
-            <History />
-            <Languaje />
-            <Philosophy />
-            <Psychology />
-            <Sociology />
-            <Anthropology/>
+           <ListProfessorDepartament></ListProfessorDepartament>
           </Aside>
         </div>
       </section></>

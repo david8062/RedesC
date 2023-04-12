@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Anthropology.css"
-const Anthropology = () => {
+const Anthropology = (props) => {
   return (
    <div className="anthropology-departament">
-    
+    {props.children}
    </div>
   )
 }

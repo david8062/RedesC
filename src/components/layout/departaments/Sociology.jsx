@@ -1,8 +1,10 @@
 import React from 'react'
 import './Sociology.css'
-const Sociology = () => {
+const Sociology = (props) => {
   return (
-    <div className="sociology__departament"></div>
+    <div className="sociology__departament">
+      {props.children}
+    </div>
   )
 }
 

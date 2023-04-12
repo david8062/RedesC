@@ -6,7 +6,6 @@ const CardProfessor = (props) => {
       <figcaption>
         <img className = 'perfil-professor' src = {props.image} /> 
         <h2 className = "name-proffesor" >{props.name}</h2>  
-        <h1>{props.departament} </h1> 
       </figcaption>
     </div></a>
   )
