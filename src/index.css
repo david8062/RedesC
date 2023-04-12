@@ -80,7 +80,8 @@ span,
 p,
 body {
     font-family: 'SourceSansPro-regular';
-    color: white;
+    /* color: white; */
+    color: black;
     font-weight: 400;
 }
 

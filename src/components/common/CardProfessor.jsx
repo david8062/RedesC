@@ -5,7 +5,8 @@ const CardProfessor = (props) => {
     <a href = {props.link} target = '_blank' ><div className = "card-proffesor" style = {props.style}>
       <figcaption>
         <img className = 'perfil-professor' src = {props.image} /> 
-        <h2 className = "name-proffesor" >{props.name}</h2>   
+        <h2 className = "name-proffesor" >{props.name}</h2>  
+        <h1>{props.departament} </h1> 
       </figcaption>
     </div></a>
   )

@@ -4,7 +4,7 @@ import CardTematic from '../../components/common/CardTematic';
 
 const ViewTematic = () => {
   const dataProfessor = DatosJSON();
-  
+
   let arrayTematic = [];
   try {
     dataProfessor.map((result) => {
