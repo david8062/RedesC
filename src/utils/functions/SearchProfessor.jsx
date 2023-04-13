@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import HookSearch from '../../utils/hooks/HookSearch';
 import CardProfessor from '../../components/common/CardProfessor';
-import Search from '../../components/common/Search'
 
 const SearchProfessor = ({ setSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
