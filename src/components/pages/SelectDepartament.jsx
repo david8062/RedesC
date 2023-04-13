@@ -2,21 +2,12 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './SelectDepartament.css'
 import Menu from '../layout/Menu'
-import Boton from '../common/BtnContinue'
-/*importacion de departamentos*/
 import Aside from '../../components/layout/Aside'
-import Cepol from '../layout/departaments/Cepol'
-import History from '../layout/departaments/History'
-import Languaje from '../layout/departaments/Languaje'
-import Philosophy from '../layout/departaments/Philosophy'
-import Psychology from "../layout/departaments/Psychology"
-import Sociology from "../layout/departaments/Sociology"
-import Anthropology from '../layout/departaments/Anthropology'
-/*importacion de componentes comunes*/
-import { showDepartament } from '../../utils/functions/showDepartament'
 import BtnContinue from '../common/BtnContinue'
+import Anthropology from '../../components/layout/departaments/Anthropology';
+
 const SelectDepartament = () => {
-  const [anthropologyVisible, setAnthropologyVisible] = useState(false);
+  const [isAnthropologyChecked, setIsAnthropologyChecked] = useState(false);
   return (
     <><><Menu></Menu>
       <section className="main-section-select-departament">
@@ -27,7 +18,14 @@ const SelectDepartament = () => {
             {/* Antropologia */}
             <li className='departament-antropology'>Antropología
               <div className="boton">
-                <input type="checkbox" name="" id="btn-switch" onChange={() => showDepartament(anthropologyVisible, setAnthropologyVisible)} />
+                <input
+                  type="checkbox"
+                  id="btn-switch"
+                  checked={isAnthropologyChecked}
+                  onChange={() => {
+                    setIsAnthropologyChecked(!isAnthropologyChecked);
+                  }}
+                />
                 <label htmlFor="btn-switch" className='lbl-siwtch'></label>
               </div>
             </li>
@@ -71,23 +69,17 @@ const SelectDepartament = () => {
         </div>
         <div className="list-professor">
           <Aside>
-            <Cepol />
-            <History />
-            <Languaje />
-            <Philosophy />
-            <Psychology />
-            <Sociology />
-            {anthropologyVisible && <Anthropology />}
+          <Anthropology anthropologyVisible={isAnthropologyChecked}>              
+            </Anthropology>
           </Aside>
         </div>
-      </section></><Link to = '/listtematic'>
-          <BtnContinue />
-          </Link>
-      </>
-      
+      </section></><Link to='/listtematic'>
+        <BtnContinue />
+      </Link>
+    </>
+
 
   )
 }
 
 export default SelectDepartament
-

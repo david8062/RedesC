@@ -1,13 +1,16 @@
-.anthropology-departament{
+.anthropology-departament.visible {
     width: 250px;
     height: 250px;
-    margin-bottom: 100px;    
+    margin-bottom: 100px;
     background-color: var(--AnthropologyB);
     opacity: 60%;
     border-radius: 50%;
     margin-right: 50%;
     margin-top: 60%;
     margin-left: 54%;
-    position: absolute;   
-}
-
+    position: absolute;
+  }
+  .hidden {
+    display: none;
+  }
+  

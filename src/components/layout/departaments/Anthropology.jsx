@@ -1,11 +1,13 @@
-import React from 'react'
-import "./Anthropology.css"
-const Anthropology = (props) => {
-  return (
-   <div className="anthropology-departament">
-    {props.children}
-   </div>
-  )
-}
+import React from 'react';
+import "./Anthropology.css";
 
-export default Anthropology
+const Anthropology = (props) => {
+  const className = `anthropology-departament ${props.anthropologyVisible ? 'visible' : 'hidden'}`;
+  return (
+    <div className={className}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Anthropology;

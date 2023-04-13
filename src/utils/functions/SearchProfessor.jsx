@@ -13,10 +13,10 @@ const SearchProfessor = ({ setSearch }) => {
 
   return (
     <div className="search__navMenu">
-      <Search
+      <input
         search={searchTerm}
         searcher={setSearchTerm}
-        busqueda="Buscar profesor"
+        placeHolder="Buscar profesor"
       />
       <div className="icon__search"></div>
       {filteredData.length > 0 && (

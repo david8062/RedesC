@@ -8,7 +8,7 @@ import Philosophy from '../../components/layout/departaments/Philosophy'
 import Psychology from "../../components/layout/departaments/Psychology"
 import Sociology from "../../components/layout/departaments/Sociology"
 import Anthropology from '../../components/layout/departaments/Anthropology'
-const ListProfessorDepartament = () => {
+const ListProfessorDepartament = ({ anthropologyVisible }) => {
 	const dataProfessor = Object.values(DatosJSON());
 
 	const profesoresPorDepartamento = {
@@ -63,6 +63,9 @@ const ListProfessorDepartament = () => {
 	return (
 
 		<><Languaje>
+			 <div className={`list-professor-departament ${anthropologyVisible ? 'visible' : 'hidden'}`}>
+     		 {/* contenido de la lista de profesores */}
+    		</div>
 			{profesoresPorDepartamento.lengua.map((profesor) => (
 				<CardProfessor
 					key={profesor.id}
@@ -125,6 +128,7 @@ const ListProfessorDepartament = () => {
 						link={profesor.link} />
 				))}
 			</Anthropology></>
+			
 
 	);
 }
